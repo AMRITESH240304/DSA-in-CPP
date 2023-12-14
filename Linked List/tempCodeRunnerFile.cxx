@@ -1,1 +1,5 @@
-    return 0;
+!= NULL){
+        //     cout<<nHead->val<< " ";
+        //     nHead = nHead->next;
+        // }
+        // cout<<endl;
