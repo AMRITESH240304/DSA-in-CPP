@@ -14,6 +14,7 @@ int main() {
     st.pop();
     st.pop();
     st.pop();
+    st.pop();
 
     cout << st.peek() << endl;
 

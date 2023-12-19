@@ -20,12 +20,16 @@ stack<int> pushBottom(stack<int>& mystack,int x){
     solve(mystack,x);
     return mystack;
 }
+
 int main(){
 
     stack<int> mystack;
     mystack.push(1);
     mystack.push(2);
     mystack.push(3);
+    mystack.push(4);
+    mystack.push(5);
+    mystack.push(6);
 
     int x = 5;
     stack<int> modified = pushBottom(mystack,x);
