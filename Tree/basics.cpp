@@ -31,7 +31,16 @@ Node* buildTree(Node* root){
     root->right = buildTree(root->right);
     return root;
 }
-
+// 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+//1->root
+/*
+    null->queue
+    current space in queue = 2
+    1->queue
+    temp = 1
+    1 is popped out of the queue and now queue size is -> 1
+    
+*/
 void levelOrderTraversal(Node* root){
     queue<Node*> q;
     q.push(root);
@@ -132,6 +141,7 @@ int main(){
     root = buildTree(root);
 
     inorder(root);
+    cout<<endl;
     levelOrderTraversal(root);
 
     return 0;
